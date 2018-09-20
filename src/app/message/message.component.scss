@@ -1,0 +1,32 @@
+.holder {
+  width: 100%;
+
+  .messageContainer {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: #fff;
+    max-width: 700px;
+    border-radius: 5px;
+    &.righty {
+      float: right;
+      .messageData {
+        background: #0088ff;
+        color: #fff;
+      }
+    }
+    .messageData {
+      padding: 20px;
+      border-radius: 5px;
+      background: #ccc;
+      .sender {
+        font-weight: bold;
+      }
+      .timestamp {
+        font-size: 0.7rem;
+      }
+    }
+    .msgBody {
+      padding: 20px;
+    }
+  }
+}

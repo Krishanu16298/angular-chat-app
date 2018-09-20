@@ -1,0 +1,15 @@
+<div class="holder">
+  <div class="messageContainer" [ngClass]="{'righty':isOwnMessage}">
+    <div class="messageData">
+      <span class="sender">
+        {{ userName }}
+      </span>
+      <span class="timestamp">
+        {{ timeStamp | date: 'medium' }}
+      </span>
+    </div>
+    <div class="msgBody">
+      {{ messageContent }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+nav {
+  color: #fff;
+  height: 10vh;
+  min-height: 56px;
+  background-color: #222;
+  h1 {
+    padding: 20px;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .links {
+      padding: 25px;
+      text-align: right;
+      span {
+        a {
+          color: #fff;
+          font-weight: bold;
+          margin-left: 20px;
+          text-decoration: none;
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            color: #08f;
+          }
+        }
+      }
+    }
+  }
+}

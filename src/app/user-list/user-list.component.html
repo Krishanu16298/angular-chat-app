@@ -1,0 +1,10 @@
+<div class="center">
+  <span>Online Users</span>
+</div>
+<div class="users">
+  <ul>
+    <div *ngFor="let user of users">
+      <li *ngIf="user.status == 'online'">{{user.displayName}}</li>
+    </div>
+  </ul>
+</div>
