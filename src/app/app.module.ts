@@ -23,6 +23,7 @@ import { ChatService } from "./services/chat.service";
 
 import { HttpClientModule } from "@angular/common/http";
 import { environment } from "../environments/environment.prod";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,25 @@ import { environment } from "../environments/environment.prod";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot([
+      {
+        path: "login",
+        component: LoginComponent
+      },
+      {
+        path: "signup",
+        component: SignupComponent
+      },
+      {
+        path: "chat",
+        component: ChatRoomComponent
+      },
+      {
+        path: "",
+        redirectTo: "/login",
+        pathMatch: "full"
+      }
+    ]),
     FormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase, "chatapp"),
